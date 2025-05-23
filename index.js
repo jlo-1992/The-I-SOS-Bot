@@ -1,32 +1,31 @@
-import 'dotenv/config'
-import linebot from 'linebot'
-import commandUsd from './commands/usd.js'
-import commandFood from './commands/food.js'
-import commandQr from './commands/qr.js'
+import "dotenv/config";
+import linebot from "linebot";
+import giphy from "./commands/giphy.js";
+import quickReply from "./commands/quickReply.js";
 
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
   channelSecret: process.env.CHANNEL_SECRET,
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
-})
+});
 
-bot.on('message', (event) => {
-  if (event.message.type === 'text') {
-    if (event.message.text === 'usd') {
-      commandUsd(event)
-    } else if (event.message.text === 'qr') {
-      commandQr(event)
-    }
-  } else if (event.message.type === 'location') {
-    commandFood(event)
+bot.on("message", async (event) => {
+  if (event.message.type === "text") {
+    await quickReply(event);
+  } else if (event.type !== "message" || event.message.type !== "text")
+    return null;
+});
+
+bot.on("postback", async (event) => {
+  const data = event.postback.data;
+  console.log(data);
+  if (data.startsWith("type=gif,")) {
+    await giphy(event);
+  } else if (data.startsWith("type=image,")) {
+    await event.reply("圖片功能還沒做");
   }
-})
+});
 
-bot.on('postback', async (event) => {
-  console.log(event)
-  await event.reply(event.postback.data)
-})
-
-bot.listen('/', process.env.PORT || 3000, () => {
-  console.log('linebot has been started')
-})
+bot.listen("/", process.env.PORT || 3000, () => {
+  console.log("linebot is running");
+});

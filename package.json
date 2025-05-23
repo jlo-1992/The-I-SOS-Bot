@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "20250522",
+  "name": "linebot",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

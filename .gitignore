@@ -2,5 +2,3 @@
 node_modules
 dump/*
 !dump/.gitkeep
-# 忽略 dump 裡所有的檔案，除了 .gitkeep檔案
-# gitkeep 檔案可以是任何名字，只是為了讓 dump 資料夾不要是空的
