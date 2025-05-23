@@ -22,12 +22,12 @@ export default async (event) => {
     gifs = gif.data?.data;
 
     gifs.slice(random, random + 3).forEach(async function (item) {
-      const url = item?.images?.original?.url;
-      if (url) {
+      const mp4 = item?.images?.original?.mp4;
+      if (mp4) {
         messages.push({
-          type: "image",
-          originalContentUrl: url,
-          previewImageUrl: url,
+          type: "video",
+          originalContentUrl: mp4,
+          previewImageUrl: mp4,
         });
       }
     });
@@ -48,7 +48,7 @@ export default async (event) => {
     if (process.env.DEV === "true") {
       fs.writeFileSync(
         "../dump/giphy.json",
-        JSON.stringify({ gifUrl, error: error.message }, null, 2)
+        JSON.stringify({ gifs, error: error.message }, null, 2)
       );
     }
   }

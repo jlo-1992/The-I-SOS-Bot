@@ -2,6 +2,7 @@ import "dotenv/config";
 import linebot from "linebot";
 import giphy from "./commands/giphy.js";
 import quickReply from "./commands/quickReply.js";
+import unsplash from "./commands/unsplash.js";
 
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
@@ -22,7 +23,7 @@ bot.on("postback", async (event) => {
   if (data.startsWith("type=gif,")) {
     await giphy(event);
   } else if (data.startsWith("type=image,")) {
-    await event.reply("圖片功能還沒做");
+    await unsplash(event);
   }
 });
 
