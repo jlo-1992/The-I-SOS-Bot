@@ -2,7 +2,7 @@ LineBot ID: @709gjpcc
 
 
 
-<img src="https://github.com/user-attachments/assets/ac7ce86b-b69b-4b00-932d-0eaffb13e9ee" alt="掃描QR code 加入" style="max-width: 100%; height: auto;">
+<img src="https://github.com/user-attachments/assets/ac7ce86b-b69b-4b00-932d-0eaffb13e9ee" alt="掃描QR code 加入" style="width: 100px; height: auto;">
 
 
 連接的公開資料來源：
