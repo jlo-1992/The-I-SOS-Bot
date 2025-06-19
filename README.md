@@ -1,6 +1,7 @@
 LineBot ID: @709gjpcc 
 
 ![掃描QR code 加入](https://github.com/user-attachments/assets/ac7ce86b-b69b-4b00-932d-0eaffb13e9ee)
+<img src="image.jpg" alt="描述文字" style="max-width: 100%; height: auto;">
 
 連接的公開資料來源：
 1. GIPHY (https://giphy.com/)，為 GIF 的搜尋引擎，用戶可以在這裡通過輸入文字來搜尋對應的 GIF。
