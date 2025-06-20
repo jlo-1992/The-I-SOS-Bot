@@ -33,6 +33,8 @@ LineBot ID: @709gjpcc
 「已讀不回的救贖」: 當你想結束對話，或懶得回覆時，一個GIF完美解決。  
 
 # 連接的公開資料來源：
-1. GIPHY (https://giphy.com/)，為 GIF 的搜尋引擎，用戶可以在這裡通過輸入文字來搜尋對應的 GIF。
-2. Unsplash (https://api.unsplash.com/search/photos)， 為免費的相片共享網站，Unsplash 使用了較為自由的著作權許可條款，這讓 Unsplash 成為了網際網路上最大的攝影相片供應商之一。
-3. 
+1. GIPHY (https://giphy.com/)：為 GIF 的搜尋引擎，用戶可以在這裡通過輸入文字來搜尋對應的 GIF。
+2. Unsplash (https://api.unsplash.com/search/photos)：為免費的相片共享網站，Unsplash 使用了較為自由的著作權許可條款，這讓 Unsplash 成為了網際網路上最大的攝影相片供應商之一。
+3. open weather data 中央氣象署開放資料平台 (https://opendata.cwa.gov.tw/index)：氣象資料開放平臺主要提供氣象相關數據和服務，供大眾、學術研究、企業等利用，以開發應用程式、研究氣候變遷、進行商業決策等。
+4. google API (https://cloud.google.com/apis?hl=zh-TW)：是由Google開發的一組應用程式的編程接口(API)，它的功能是，能允許與Google相關服務進行通訊和其他的相關服務。
+5. 自由時報 RSS (https://news.ltn.com.tw/rss/all.xml)：自由時報的RSS (Really Simple Syndication) 服務，讓讀者可以訂閱網站上的新聞內容，透過RSS 閱讀器(Reader) 隨時接收最新資訊，而無需每次都到網站上瀏覽。 
