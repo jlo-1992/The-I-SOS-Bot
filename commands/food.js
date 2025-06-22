@@ -1,4 +1,4 @@
-import foodCards from "../templates/foodCards.js";
+import foodCards from "../templates/FoodCards.js";
 import { searchNearbyRestaurants } from "../utilis/googlePlaceApi.js";
 import utilisGeo from "../utilis/geo.js";
 
